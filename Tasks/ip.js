@@ -1,6 +1,6 @@
 // Split string by the first occurrence of separator
-// Step 7
-// Created intermediate variables arrayLength and parsedString
+// Step 8
+// Use method push for resultArray
 
 'use strict';
 
@@ -13,7 +13,7 @@ const parseIp = (string) => {
   for (let j = 0; j < array.length; j++) {
     const parsedString = parseInt(array[j])
     if (isNaN(parsedString)) return;
-    resultArray[j] = parsedString;
+    resultArray.push(parsedString);
   }
   return resultArray;
 };
