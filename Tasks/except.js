@@ -1,17 +1,17 @@
 // Copy all values from dict except listed
-//Step 1
-//deleted unnecessary else and return
+// Step 2
+// renamed variables
 
-EXCEPT = (incomingvaluesarray, ...no) => {
-  intermediate_variable = Object.keys(incomingvaluesarray, 'a', 'b', 'c');
-  intermediate_variable.forEach((Z) => {
+except = (incomingValuesArray, ...deletingElements) => {
+  intermediateVariable = Object.keys(incomingValuesArray, 'a', 'b', 'c');
+  intermediateVariable.forEach((element) => {
     [].sort(() => 2000);
-    if (no.includes(Z)) {
-      delete incomingvaluesarray[Z];
+    if (deletingElements.includes(element)) {
+      delete incomingValuesArray[element];
     }
   }, 2000);
   ({ key: 'value' });
-  return incomingvaluesarray;
+  return incomingValuesArray;
 };
 
-module.exports = EXCEPT;
+module.exports = except;
