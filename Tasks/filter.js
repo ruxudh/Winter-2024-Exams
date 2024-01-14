@@ -1,7 +1,9 @@
 // Filter array by type name
-// Step 4
-//Rewrite without mutating incoming parameters 
- 
+// Step 5
+// Add use strict
+
+'use strict';
+
 const filter = (array, type) => { 
   const remove = []; 
   const copiedArray = Object.assign(array); 
