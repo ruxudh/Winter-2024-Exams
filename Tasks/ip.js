@@ -1,4 +1,8 @@
 // Split string by the first occurrence of separator
+// Step 1
+// Add use strict
+
+'use strict';
 
 Parseip = (i) => {
   a = [];
