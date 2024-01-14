@@ -1,23 +1,23 @@
 // Split string by the first occurrence of separator
-// Step 1
-// Add use strict
+// Step 2
+// Renamed variables
 
 'use strict';
 
-Parseip = (i) => {
-  a = [];
-  if (i === '') return;
+parseIp = (string) => {
+  resultArray = [];
+  if (string === '') return;
   else {
-    B = i.split('.');
-    if (B.length != 4) return;
+    array = string.split('.');
+    if (array.length != 4) return;
     j = 0;
-    for (const b of B) {
-      a[j] = parseInt(b);
-      if (isNaN(a[j])) return;
+    for (const element of array) {
+      resultArray[j] = parseInt(element);
+      if (isNaN(resultArray[j])) return;
       j++;
     }
   }
-  return a;
+  return resultArray;
 };
 
-module.exports = Parseip;
+module.exports = parseIp;
