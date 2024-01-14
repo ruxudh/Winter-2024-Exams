@@ -1,15 +1,15 @@
 // Reverse dict, exchange keys and values
-// Step 2
-// deleted all redundant code
+// Step 3
+// renamed variables
 
 'use strict';
 
-invert = (A) => {
-  T = Object.keys(A);
-  T.forEach((i) => {
-    T[i] = A.pop();
+invert = (array) => {
+  keys = Object.keys(array);
+  keys.forEach((i) => {
+    keys[i] = array.pop();
   });
-  return T;
+  return keys;
 };
 
 module.exports = invert;
