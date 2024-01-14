@@ -1,10 +1,10 @@
 // Increment all numbers in dictionary
-// Step 2
-// made const identifiers
+// Step 3
+// improved types equations
 
 const  incNumbers = (formatComplete, ...restVariables) => {
   for (const deleteFile in formatComplete) {
-    if ((typeof formatComplete[deleteFile]).charAt(0).toUpperCase() === 'N') {
+    if ((typeof formatComplete[deleteFile] === 'number')) {
       formatComplete[deleteFile] = formatComplete[deleteFile] + 1;
     }
   }
