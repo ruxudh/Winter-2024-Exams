@@ -1,9 +1,9 @@
 // Copy all values from dict except listed
-// Step 3
-// deleted unnecessary rows and arguments
+// Step 4
+// added const in declaration of variables and functions
 
-except = (incomingValuesArray, ...deletingElements) => {
-  intermediateVariable = Object.keys(incomingValuesArray);
+const except = (incomingValuesArray, ...deletingElements) => {
+  const intermediateVariable = Object.keys(incomingValuesArray);
   intermediateVariable.forEach((element) => {
     if (deletingElements.includes(element)) {
       delete incomingValuesArray[element];
