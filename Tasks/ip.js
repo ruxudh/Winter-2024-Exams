@@ -1,16 +1,16 @@
 // Split string by the first occurrence of separator
-// Step 2
-// Renamed variables
+// Step 3
+// Added identifiers
 
 'use strict';
 
-parseIp = (string) => {
-  resultArray = [];
+const parseIp = (string) => {
+  const resultArray = [];
   if (string === '') return;
   else {
-    array = string.split('.');
+    const array = string.split('.');
     if (array.length != 4) return;
-    j = 0;
+    let j = 0;
     for (const element of array) {
       resultArray[j] = parseInt(element);
       if (isNaN(resultArray[j])) return;
