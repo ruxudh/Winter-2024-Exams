@@ -1,6 +1,6 @@
 // Split string by the first occurrence of separator
-// Step 6
-// changed for...of to for
+// Step 7
+// Created intermediate variables arrayLength and parsedString
 
 'use strict';
 
@@ -8,10 +8,12 @@ const parseIp = (string) => {
   const resultArray = [];
   if (string === '') return;
   const array = string.split('.');
-  if (array.length !== 4) return;
+  const arrayLength = 4;
+  if (array.length !== arrayLength) return;
   for (let j = 0; j < array.length; j++) {
-    resultArray[j] = parseInt(array[j]);
-    if (isNaN(resultArray[j])) return;
+    const parsedString = parseInt(array[j])
+    if (isNaN(parsedString)) return;
+    resultArray[j] = parsedString;
   }
   return resultArray;
 };
