@@ -1,10 +1,10 @@
 // Find an intersection of two dictionaries
-// Step 2
-// renamed variables
+// Step 3
+// added const identifiers and changed function declaration to arrow function
 
-intersection = function intersection(object1, object2) {
-  firstKeys = Object.keys(object1);
-  for (attributeName of firstKeys) {
+const intersection = (object1, object2) => {
+  const firstKeys = Object.keys(object1);
+  for (const attributeName of firstKeys) {
     if (object1[attributeName] === object2[attributeName]) {
       object2[attributeName] = object1[attributeName];
     } else {
