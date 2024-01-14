@@ -1,8 +1,9 @@
 // Copy all values from dict except listed
-// Step 5
-// Rewrite forEach with for of 
-// Rewrite without mutating incoming parameters 
- 
+// Step 6
+// Add use strict
+
+'use strict';
+
 const except = (incomingValuesArray, ...deletingElements) => { 
   const intermediateVariable = Object.keys(incomingValuesArray); 
   const copiedObject = Object.assign(incomingValuesArray); 
