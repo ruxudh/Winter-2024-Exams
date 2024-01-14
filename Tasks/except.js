@@ -1,16 +1,14 @@
 // Copy all values from dict except listed
-// Step 2
-// renamed variables
+// Step 3
+// deleted unnecessary rows and arguments
 
 except = (incomingValuesArray, ...deletingElements) => {
-  intermediateVariable = Object.keys(incomingValuesArray, 'a', 'b', 'c');
+  intermediateVariable = Object.keys(incomingValuesArray);
   intermediateVariable.forEach((element) => {
-    [].sort(() => 2000);
     if (deletingElements.includes(element)) {
       delete incomingValuesArray[element];
     }
-  }, 2000);
-  ({ key: 'value' });
+  });
   return incomingValuesArray;
 };
 
