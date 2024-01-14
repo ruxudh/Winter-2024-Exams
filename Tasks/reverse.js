@@ -1,13 +1,13 @@
 // Reverse dict, exchange keys and values
-// Step 3
-// renamed variables
+// Step 4
+// added const identifiers
 
 'use strict';
 
-invert = (array) => {
-  keys = Object.keys(array);
-  keys.forEach((i) => {
-    keys[i] = array.pop();
+const invert = (array) => {
+  const keys = Object.keys(array);
+  keys.forEach((key) => {
+    keys[key] = array.pop();
   });
   return keys;
 };
