@@ -1,10 +1,11 @@
 // Increment all numbers in dictionary
-// Step 4
-// changed for...in to for...of
+// Step 5
+// added intermediate variable 'value'
 
 const  incNumbers = (formatComplete, ...restVariables) => {
   for (const deleteFile of Object.keys(formatComplete)) {
-    if ((typeof formatComplete[deleteFile] === 'number')) {
+    const value = formatComplete[deleteFile];
+    if ((typeof value === 'number')) {
       formatComplete[deleteFile] = formatComplete[deleteFile] + 1;
     }
   }
