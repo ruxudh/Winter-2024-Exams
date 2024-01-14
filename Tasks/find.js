@@ -1,6 +1,8 @@
 // Find key by value
-// Step 6
-// changed pop() to shift()
+// Step 7
+// Add use strict
+
+'use strict';
 
 const find = (object, ...rest) => {
   const value = rest.shift();
