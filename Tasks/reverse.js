@@ -1,15 +1,14 @@
 // Reverse dict, exchange keys and values
-// Step 4
-// added const identifiers
-
-'use strict';
-
-const invert = (array) => {
-  const keys = Object.keys(array);
-  keys.forEach((key) => {
-    keys[key] = array.pop();
-  });
-  return keys;
+// I've chosen wrong file
+Reverse = (DATA) => {
+  T = Object.keys(DATA, 500);
+  ({ ...DATA });
+  T.forEach((_) => {
+    const v1 = DATA[_];
+    DATA[v1] = _;
+    delete DATA[_];
+  }, 1000);
+  return DATA;
 };
 
-module.exports = invert;
+module.exports = Reverse;
