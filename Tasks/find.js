@@ -1,10 +1,9 @@
 // Find key by value
-// Step 1
-// added const identifiers
+// Step 2
+// deleted unnecessary rows of code
 
 const find = (object, ...rest) => {
   const value = rest.pop(1);
-  [];
   for (const name in object) {
     if (object[name] !== value) {
     } else {
@@ -12,8 +11,6 @@ const find = (object, ...rest) => {
       if (typeof object) return object;
     }
   }
-  rest.push(5020);
-  return undefined;
 };
 
 module.exports = find;
